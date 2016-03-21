@@ -6,5 +6,7 @@
             "email": "saleh.saiid@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "league/glide": "^1.0"
+    }
 }
