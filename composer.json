@@ -10,6 +10,7 @@
         "league/glide": "^1.0",
         "league/flysystem-aws-s3-v3": "^1.0",
         "symfony/http-foundation": "^3.0",
-        "league/glide-symfony": "^1.0"
+        "league/glide-symfony": "^1.0",
+        "altorouter/altorouter": "^1.1"
     }
 }
