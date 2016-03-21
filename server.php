@@ -51,6 +51,11 @@ $server = new League\Glide\Server(
     $api
 );
 
+$server->setSourcePathPrefix($config['source_path_prefix']);
+$server->setCachePathPrefix($config['cache_path_prefix']);
+$server->setGroupCacheInFolders($config['group_cache_in_folders']);
+$server->setBaseUrl($config['base_url']);
+
 // Set response factory
 $server->setResponseFactory(new \League\Glide\Responses\SymfonyResponseFactory());
 

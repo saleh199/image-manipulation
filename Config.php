@@ -11,29 +11,29 @@ return [
         /* Source filesystem */
         'source' => [
             'credentials'   => [
-                'key'   => '',
-                'secret'    => ''
+                'key'   => 'AKIAI67QKS3CUBK7A2QA',
+                'secret'    => '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'
             ],
-            'region'    => '',
+            'region'    => 'us-east-1',
             'version'   => 'latest',
-            'bucket'    => ''
+            'bucket'    => 'development-overestate'
         ],
 
         /* Cache filesystem */
         'cache' => [
             'credentials'   => [
-                'key'   => '',
-                'secret'    => ''
+                'key'   => 'AKIAI67QKS3CUBK7A2QA',
+                'secret'    => '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'
             ],
-            'region'    => '',
+            'region'    => 'us-east-1',
             'version'   => 'latest',
-            'bucket'    => ''
+            'bucket'    => 'development-overestate'
         ]
     ],
 
     'base_url'              => '',
-    'source_path_prefix'    => '',
-    'cache_path_prefix'     => '',
+    'source_path_prefix'    => 'source',
+    'cache_path_prefix'     => 'cache',
     'group_cache_in_folders'    => true,
     'signkey'               => 'lPSJjVjm//Ts2715OjAJ+pUPRX5gc2bZM7MRfW8BD+Ds18lTlnlEW++u2xZY2lLssBtxkg7ehiy3oi9iOUH75NDU/6IX3O9/XmFVI47j+eKIhCXP1QO2C9T1UwGzw82ejjtz627fP0bCEKEstasmEASoxYZkdWzuuo4RAZsnDBE='
 ];

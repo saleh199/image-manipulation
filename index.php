@@ -7,7 +7,12 @@ $router = new AltoRouter();
 
 
 $router->map('GET', '/[*:path]', function($path) use ($server){
-    echo $server->outputImage($path, $_GET);
+    try{
+        echo $server->outputImage($path, $_GET);
+    }catch(Exception $e){
+        header( $_SERVER["SERVER_PROTOCOL"] . ' 500 Bad Request');
+        die('500 Bad Request');
+    }
 }, 'home');
 
 // match current request url
