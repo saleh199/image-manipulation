@@ -53,3 +53,5 @@ $server = new League\Glide\Server(
 
 // Set response factory
 $server->setResponseFactory(new \League\Glide\Responses\SymfonyResponseFactory());
+
+return $server;
