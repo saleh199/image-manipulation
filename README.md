@@ -14,3 +14,74 @@ Glide is a wonderfully easy on-demand image manipulation library written in PHP.
  - Powered by the battle tested [Intervention Image][int-image] image handling and manipulation library.
  - Framework-agnostic, will work with any project.
  - Composer ready and PSR-2 compliant.
+ 
+ 
+### Configuration
+
+- Source storage :
+
+set your source and cache locations
+ 
+```php
+    'source' => [
+        'credentials'   => [
+            'key'   => '',
+            'secret'    => ''
+        ],
+        'region'    => '',
+        'version'   => 'latest',
+        'bucket'    => ''
+    ],
+```
+
+- Cache storage :
+
+set your source and cache locations
+
+```php
+    'cache' => [
+        'credentials'   => [
+            'key'   => '',
+            'secret'    => ''
+        ],
+        'region'    => '',
+        'version'   => 'latest',
+        'bucket'    => ''
+    ],
+```
+
+- Signature key (security)
+
+ Secure your Glide image server with HTTP signatures. By signing each request with a private key, no alterations can be made to the URL parameters.
+
+```php
+'signkey' => '',
+```
+
+- Grouping cache in folders
+
+By default Glide groups cached images into folders.
+
+```php
+'group_cache_in_folders'    => true,
+```
+
+- Defaults
+
+In certain situations you may want to define default image manipulations.
+
+```php
+'defaults'  =>  [
+    'w' =>  1000,
+    'h' =>  1000
+]
+```
+
+- Set default path prefix
+
+While it’s normally possible to set the full source and cache path using Flysystem, there are situations where it may be desirable to set a default path prefix.
+
+```php
+'source_path_prefix'    => 'source',
+'cache_path_prefix'     => 'cache',
+```
