@@ -35,5 +35,9 @@ return [
     'source_path_prefix'    => 'source',
     'cache_path_prefix'     => 'cache',
     'group_cache_in_folders'    => true,
-    'signkey'               => 'lPSJjVjm//Ts2715OjAJ+pUPRX5gc2bZM7MRfW8BD+Ds18lTlnlEW++u2xZY2lLssBtxkg7ehiy3oi9iOUH75NDU/6IX3O9/XmFVI47j+eKIhCXP1QO2C9T1UwGzw82ejjtz627fP0bCEKEstasmEASoxYZkdWzuuo4RAZsnDBE='
+    'signkey'               => 'lPSJjVjm//Ts2715OjAJ+pUPRX5gc2bZM7MRfW8BD+Ds18lTlnlEW++u2xZY2lLssBtxkg7ehiy3oi9iOUH75NDU/6IX3O9/XmFVI47j+eKIhCXP1QO2C9T1UwGzw82ejjtz627fP0bCEKEstasmEASoxYZkdWzuuo4RAZsnDBE=',
+    'defaults'  =>  [
+        'w' =>  1000,
+        'h' =>  1000
+    ]
 ];
