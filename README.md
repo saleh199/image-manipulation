@@ -58,6 +58,31 @@ set your source and cache locations
 'signkey' => '',
 ```
 
+Generate a signature for each image request you make. Glide comes with a URL builder to make this process easy. Be sure to use the same signing key you configured earlier.
+
+```php
+<?php
+
+use League\Glide\Urls\UrlBuilderFactory;
+
+// Set complicated sign key
+$signkey = 'v-LK4WCdhcfcc%jt*VC2cj%nVpu+xQKvLUA%H86kRVk_4bgG8&CWM#k*b_7MUJpmTc=4GFmKFp7=K%67je-skxC5vz+r#xT?62tT?Aw%FtQ4Y3gvnwHTwqhxUh89wCa_';
+
+// Create an instance of the URL builder
+$urlBuilder = UrlBuilderFactory::create('/img/', $signkey);
+
+// Generate a URL
+$url = $urlBuilder->getUrl('cat.jpg', ['w' => 500]);
+
+// Use the URL in your app
+echo '<img src="'.$url.'">';
+
+// Prints out
+<img src="/img/cat.jpg?w=500&s=af3dc18fc6bfb2afb521e587c348b904">
+```
+
+recommend using a 128 character (or larger) signing key to prevent trivial key attacks. Consider using a package like [CryptoKey](https://github.com/AndrewCarterUK/CryptoKey) to generate a secure key.
+
 - Grouping cache in folders
 
 By default Glide groups cached images into folders.
