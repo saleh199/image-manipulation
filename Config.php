@@ -11,23 +11,23 @@ return [
         /* Source filesystem */
         'source' => [
             'credentials'   => [
-                'key'   => 'AKIAI67QKS3CUBK7A2QA',
-                'secret'    => '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'
+                'key'   => '',
+                'secret'    => ''
             ],
-            'region'    => 'us-east-1',
+            'region'    => '',
             'version'   => 'latest',
-            'bucket'    => 'development-overestate'
+            'bucket'    => ''
         ],
 
         /* Cache filesystem */
         'cache' => [
             'credentials'   => [
-                'key'   => 'AKIAI67QKS3CUBK7A2QA',
-                'secret'    => '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'
+                'key'   => '',
+                'secret'    => ''
             ],
-            'region'    => 'us-east-1',
+            'region'    => '',
             'version'   => 'latest',
-            'bucket'    => 'development-overestate'
+            'bucket'    => ''
         ]
     ],
 
